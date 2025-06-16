@@ -20,14 +20,6 @@ app.register_blueprint(api, url_prefix='/api')
 def hello_world():
     return 'Hello, World!'
 
-
-@app.route('/hellou')
-def get_users():
-    return {
-        'users': [ 'Alice', 'Zoe', 'Nico']
-    }
-
-
 if __name__ == '__main__':
     PORT = int(os.environ.get('PORT', 3001))
     app.run(host='0.0.0.0', port=PORT, debug=True)

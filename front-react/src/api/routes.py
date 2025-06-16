@@ -1,6 +1,5 @@
 from flask import Blueprint, jsonify, request, url_for
 from api.models import db, User
-#from api.utils import generate_sitemap, APIException
 from flask_cors import CORS
 
 api = Blueprint('api', __name__)
