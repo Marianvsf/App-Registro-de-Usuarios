@@ -1,8 +1,13 @@
+import sys
 import os
-from flask import Flask, request, jsonify, url_for
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from flask import Flask, request, jsonify, url_for, send_from_directory
 from flask_cors import CORS
 from flask_migrate import Migrate
 from flask_bcrypt import Bcrypt
+from flask_swagger import swagger
 from api.extensions import db, bcrypt
 from api.routes import api
 from api.admin import setup_admin

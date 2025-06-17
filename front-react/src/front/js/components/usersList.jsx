@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import '../../styles/userList.css'
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 function UsersList() {
     const [users, setUsers] = useState([]);
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:3001/api/users')
+        fetch(`${BACKEND_URL}/users`)
             .then(res => res.json())
             .then(data => { 
                 setUsers(data.users);

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/registrationForm.css';
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ const handleSubmit = async (e) => {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/api/registration_form', { 
+      const response = await fetch(`${BACKEND_URL}/registration_form`, { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -79,7 +80,7 @@ const handleSubmit = async (e) => {
       <h2 className="registration-heading">Registro de Usuario</h2>
       <form onSubmit={handleSubmit} className="registration-form">
         <div className="form-group">
-          <label htmlFor="name" className="form-label">Nombre y Apellido:</label>
+          <label htmlFor="name" className="form-label">Nombre:</label>
           <input
             type="text"
             id="name"
