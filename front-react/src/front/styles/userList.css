@@ -1,0 +1,9 @@
+.containerh2 {
+    margin-top: 100px;
+    margin-inline: auto;
+}
+
+.table-striped {
+    min-width: 600px;
+    border-collapse: collapse;
+}

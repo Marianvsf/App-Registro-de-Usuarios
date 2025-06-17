@@ -1,8 +1,11 @@
 import os
-from flask import Flask
+from flask import Flask, request, jsonify, url_for
 from flask_cors import CORS
-from api.extensions import db
-
+from flask_migrate import Migrate
+from flask_bcrypt import Bcrypt
+from api.extensions import db, bcrypt
+from api.routes import api
+from api.admin import setup_admin
 
 app = Flask (__name__)
 CORS(app) #enable CORS on all routes
@@ -11,8 +14,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
-from api.routes import api
-
+bcrypt.init_app(app)
+migrate = Migrate(app, db)
+setup_admin(app)
 app.register_blueprint(api, url_prefix='/api')
 
 

@@ -1,42 +1,27 @@
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './front/js/components/home';
+import RegistrationForm from './front/js/components/registrationForm';
+import UsersList from './front/js/components/usersList';
+import './front/styles/App.css';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    fetch('http://localhost:5000/api/users')
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-  });
 
 
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/registration_form' element={<RegistrationForm />} />
+        <Route path='/users' element={<UsersList />} />
+      </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      
     </>
   )
 }
 
-export default App
+export default App;
