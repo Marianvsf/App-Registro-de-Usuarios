@@ -35,3 +35,7 @@ Una vez que la aplicación esté instalada y en funcionamiento (siguiendo las in
 
 🤝 Contribución
 Si deseas contribuir a este proyecto, ¡eres bienvenido! Por favor, revisa los archivos de cada sección para más información.
+
+![image](https://github.com/user-attachments/assets/50aa1079-d9f9-452d-b301-a3f11759b56b)
+![image](https://github.com/user-attachments/assets/8c3baa42-f5a6-4636-b60d-6e27f1e1fb9a)
+
