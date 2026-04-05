@@ -1,41 +1,77 @@
-# React & Flask
+<h1 align="center">🔐 User Auth: React + Flask</h1>
 
-# App de Registro de Usuarios
-Una aplicación completa para el registro y gestión de usuarios, diseñada con una arquitectura robusta que incluye un frontend desarrollado en React y un backend en Flask. Esta aplicación garantiza la seguridad de los datos mediante validaciones rigurosas y almacenamiento seguro de contraseñas.
+<p align="center">
+  <strong>Sistema Full-Stack de gestión de usuarios con arquitectura desacoplada.</strong>
+  <br />
+  Seguridad, validación robusta y persistencia de datos en una solución integral.
+</p>
 
-📝 Descripción
-Este proyecto se centra en proporcionar una solución eficiente y segura para el registro y la administración de usuarios. Cuenta con un formulario de registro intuitivo que implementa validaciones tanto en el lado del cliente (frontend) como en el lado del servidor (backend) para asegurar la integridad de los datos, incluyendo nombre, correo electrónico y contraseña.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+</p>
 
-✨ Características
--Registro Seguro de Usuarios: Formularios de registro con validaciones robustas para nombre, correo electrónico y contraseña.
--Almacenamiento Seguro de Datos: Las contraseñas se almacenan de forma segura utilizando técnicas de hashing.
--Verificación de Duplicados: El sistema verifica la existencia de usuarios duplicados antes de registrarlos.
--Visualización de Usuarios Registrados: Permite ver una lista de los usuarios que se han registrado en la aplicación.
+---
 
-🚀 Tecnologías Utilizadas
-El proyecto está construido con las siguientes tecnologías:
+## 📝 Descripción
 
--Frontend:
-React: Biblioteca de JavaScript para construir interfaces de usuario.
-JavaScript
-CSS
-HTML
--Backend:
-Flask: Microframework de Python para el desarrollo web.
-Python
+Este proyecto es una aplicación **Full-Stack** diseñada para ofrecer una solución segura y eficiente en el registro y administración de usuarios. El sistema destaca por implementar una comunicación fluida entre un frontend dinámico en **React** y un backend escalable en **Flask (Python)**.
 
-💻 Instalación
-Para configurar y ejecutar este proyecto localmente, sigue las instrucciones detalladas en las siguientes carpetas:
+Se pone especial énfasis en la **integridad de los datos** y la **seguridad de la información**, aplicando validaciones en espejo (tanto en cliente como en servidor) y protocolos de protección de identidad.
 
-Frontend: Navega a la carpeta front-react para las instrucciones de configuración del cliente.
-Backend: Navega a la carpeta server-flask para las instrucciones de configuración del servidor.
+---
 
-💡 Uso
-Una vez que la aplicación esté instalada y en funcionamiento (siguiendo las instrucciones de instalación del frontend y el backend), podrás acceder a la interfaz de usuario para registrar nuevos usuarios y visualizar los ya existentes.
+## ✨ Características Principales
 
-🤝 Contribución
-Si deseas contribuir a este proyecto, ¡eres bienvenido! Por favor, revisa los archivos de cada sección para más información.
+* **🛡️ Seguridad Avanzada:** Almacenamiento de credenciales mediante técnicas de **Hashing**, garantizando que las contraseñas nunca se guarden en texto plano.
+* **✅ Validación Dual:** Control riguroso de formatos (email, longitud de clave, campos obligatorios) tanto en la interfaz como en el API.
+* **🔍 Inteligencia de Datos:** Sistema de verificación de duplicados para prevenir redundancia en la base de datos.
+* **👥 Panel de Gestión:** Interfaz administrativa para la visualización en tiempo real de los usuarios registrados.
+* **🌐 Arquitectura REST:** Comunicación basada en JSON para un intercambio de datos ligero y estándar.
 
-![image](https://github.com/user-attachments/assets/50aa1079-d9f9-452d-b301-a3f11759b56b)
-![image](https://github.com/user-attachments/assets/8c3baa42-f5a6-4636-b60d-6e27f1e1fb9a)
+---
 
+## 🛠️ Stack Tecnológico
+
+### **Frontend**
+* **React:** Construcción de una SPA (Single Page Application) reactiva.
+* **CSS3/HTML5:** Diseño centrado en la experiencia de usuario (UX).
+* **JavaScript (ES6+):** Lógica de consumo de APIs y manejo de estados.
+
+### **Backend**
+* **Flask:** Microframework de Python potente para la lógica de negocio.
+* **Python:** Procesamiento de datos y lógica de backend.
+* **Security Libs:** Implementación de hashing para la protección de usuarios.
+
+---
+
+## 💻 Guía de Instalación
+
+El proyecto se divide en dos módulos independientes para facilitar su despliegue:
+
+### 🎨 Frontend (`/front-react`)
+1. Ingresa a la carpeta del cliente.
+2. Ejecuta `npm install` para las dependencias.
+3. Inicia con `npm start`.
+
+### ⚙️ Backend (`/server-flask`)
+1. Ingresa a la carpeta del servidor.
+2. Configura tu entorno virtual de Python.
+3. Instala los requerimientos y ejecuta el script principal de Flask.
+
+---
+
+## 🖼️ Vista del Proyecto
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/50aa1079-d9f9-452d-b301-a3f11759b56b" width="48%" alt="Registro de Usuario" />
+  <img src="https://github.com/user-attachments/assets/8c3baa42-f5a6-4636-b60d-6e27f1e1fb9a" width="48%" alt="Lista de Usuarios" />
+</div>
+
+---
+
+<p align="center">
+  Desarrollado con compromiso por <a href="https://github.com/mariansvf">Marian SVF</a>
+</p>
